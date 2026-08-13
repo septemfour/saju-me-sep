@@ -1,0 +1,11 @@
+# 실제 Vite 앱이 있는 하위 폴더를 빌드합니다
+[build]
+  base = "saju-me-sep"
+  command = "npm run build"
+  publish = "dist"
+
+# React SPA: 새로고침/직접 URL 진입 시 404 방지
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
