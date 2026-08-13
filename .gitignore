@@ -1,0 +1,4 @@
+# API 키 등 비밀 정보 — GitHub에 절대 올리지 않음
+.env
+.env.*
+!.env.example
