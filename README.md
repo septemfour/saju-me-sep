@@ -72,3 +72,18 @@ saju-me-sep/
 
 - `VITE_GEMINI_API_KEY`는 프론트엔드에 노출됩니다. 학습/개인용으로만 사용하고, 키가 유출되면 즉시 재발급하세요.
 - `.env`는 `.gitignore`에 포함되어 있어 GitHub에 푸시되지 않습니다.
+
+## Netlify 배포
+
+저장소에 `netlify.toml`이 포함되어 있습니다.
+
+- Base directory: `saju-me-sep`
+- Build command: `npm run build`
+- Publish directory: `dist`
+
+Netlify Site settings에서 **Site configuration → General → Privacy** 를 Public으로 바꿔야 다른 사람도 링크로 접속할 수 있습니다.
+
+환경 변수는 Netlify UI에서 추가하세요.
+
+- Key: `VITE_GEMINI_API_KEY`
+- Value: Gemini API 키
